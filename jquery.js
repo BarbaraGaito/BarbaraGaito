@@ -1,161 +1,55 @@
 // _____________________ ON Scroll menu ______________________
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+  myFunction();
+};
 
 var header = document.getElementById("Header");
 var sticky = header.offsetTop;
-
 var logo = document.getElementById("img_logo_black");
-
 var menu = document.getElementById("icono_menu");
-
-var progress50 = document.getElementById("progreso50")
-var progress60 = document.getElementById("progreso60")
-var progress70 = document.getElementById("progreso70")
-var progress80 = document.getElementById("progreso80")
-var progress90 = document.getElementById("progreso90")
-var progress100 = document.getElementById("progreso100")
-
-var progress50_2 = document.getElementById("progreso50_2")
-var progress50_3 = document.getElementById("progreso50_3")
-var progress60_2 = document.getElementById("progreso60_2")
-var progress70_2 = document.getElementById("progreso70_2")
-var progress70_3 = document.getElementById("progreso70_3")
-var progress80_2 = document.getElementById("progreso80_2")
-var progress90_2 = document.getElementById("progreso90_2")
-var progress100_2 = document.getElementById("progreso100_2")
-
+var progress50 = document.getElementById("progreso50");
+var progress60 = document.getElementById("progreso60");
+var progress70 = document.getElementById("progreso70");
+var progress80 = document.getElementById("progreso80");
+var progress90 = document.getElementById("progreso90");
+var progress100 = document.getElementById("progreso100");
+var progress50_2 = document.getElementById("progreso50_2");
+var progress50_3 = document.getElementById("progreso50_3");
+var progress60_2 = document.getElementById("progreso60_2");
+var progress70_2 = document.getElementById("progreso70_2");
+var progress70_3 = document.getElementById("progreso70_3");
+var progress80_2 = document.getElementById("progreso80_2");
+var progress90_2 = document.getElementById("progreso90_2");
+var progress100_2 = document.getElementById("progreso100_2");
 let mybutton = document.getElementById("back_to_top");
 
 function myFunction() {
-  if (window.screen.width >= 1500){
-    if (document.documentElement.scrollTop > 900) {
-      header.classList.add("sticky");
-      mybutton.style.display = "block";
-      logo.style.display = "none";
-  
-      if (document.documentElement.scrollTop > 1800){
-        progress70.style.animationPlayState = "running";
-        progress100.style.animationPlayState = "running";
-        progress80.style.animationPlayState = "running";
-        progress60.style.animationPlayState = "running";
-        progress50.style.animationPlayState = "running";
-        progress50_2.style.animationPlayState = "running";
-  
-        progress60_2.style.animationPlayState = "running";
-        progress100_2.style.animationPlayState = "running";
-        progress50_3.style.animationPlayState = "running";
-        progress70_2.style.animationPlayState = "running";
-        progress70_3.style.animationPlayState = "running";
-      }
-    } else {
-      header.classList.remove("sticky");
-      mybutton.style.display = "none";
-      logo.style.display = "block";
-    }
-  } else if (window.screen.width >= 1100){
-    if (document.documentElement.scrollTop > 700) {
-      header.classList.add("sticky");
-      mybutton.style.display = "block";
-      logo.style.display = "none";
-  
-      if (document.documentElement.scrollTop > 1600){
-        progress70.style.animationPlayState = "running";
-        progress100.style.animationPlayState = "running";
-        progress80.style.animationPlayState = "running";
-        progress60.style.animationPlayState = "running";
-        progress50.style.animationPlayState = "running";
-        progress50_2.style.animationPlayState = "running";
-  
-        progress60_2.style.animationPlayState = "running";
-        progress100_2.style.animationPlayState = "running";
-        progress50_3.style.animationPlayState = "running";
-        progress70_2.style.animationPlayState = "running";
-        progress70_3.style.animationPlayState = "running";
-      }
-    } else {
-      header.classList.remove("sticky");
-      mybutton.style.display = "none";
-      logo.style.display = "block";
-    }
-  } else if  (window.screen.width >= 1024){
-    if (document.documentElement.scrollTop > 500) {
-      header.classList.add("sticky");
-      mybutton.style.display = "block";
-      logo.style.display = "none";
-      
-  
-      if (document.documentElement.scrollTop > 1500){
-        progress70.style.animationPlayState = "running";
-        progress100.style.animationPlayState = "running";
-        progress80.style.animationPlayState = "running";
-        progress60.style.animationPlayState = "running";
-        progress50.style.animationPlayState = "running";
-        progress50_2.style.animationPlayState = "running";
-  
-        progress60_2.style.animationPlayState = "running";
-        progress100_2.style.animationPlayState = "running";
-        progress50_3.style.animationPlayState = "running";
-        progress70_2.style.animationPlayState = "running";
-        progress70_3.style.animationPlayState = "running";
-      }
-    } else {
-      header.classList.remove("sticky");
-      mybutton.style.display = "none";
-      logo.style.display = "block";
-    }
-  } else if  (window.screen.width >= 768){
-    if (document.documentElement.scrollTop > 400) {
-      header.classList.add("sticky");
-      mybutton.style.display = "block";
-      logo.style.display = "none";
-  
-      if (document.documentElement.scrollTop > 1200){
-        progress70.style.animationPlayState = "running";
-        progress100.style.animationPlayState = "running";
-        progress80.style.animationPlayState = "running";
-        progress60.style.animationPlayState = "running";
-        progress50.style.animationPlayState = "running";
-        progress50_2.style.animationPlayState = "running";
-  
-        progress60_2.style.animationPlayState = "running";
-        progress100_2.style.animationPlayState = "running";
-        progress50_3.style.animationPlayState = "running";
-        progress70_2.style.animationPlayState = "running";
-        progress70_3.style.animationPlayState = "running";
-      }
-    } else {
-      header.classList.remove("sticky");
-      mybutton.style.display = "none";
-      logo.style.display = "block";
-    }
-  } else if  (window.screen.width < 768){
-    if (document.documentElement.scrollTop > 400) {
-      header.classList.add("sticky");
-      mybutton.style.display = "block";
-      logo.style.display = "none";
-  
-      if (document.documentElement.scrollTop > 1200){
-        progress70.style.animationPlayState = "running";
-        progress100.style.animationPlayState = "running";
-        progress80.style.animationPlayState = "running";
-        progress60.style.animationPlayState = "running";
-        progress50.style.animationPlayState = "running";
-        progress50_2.style.animationPlayState = "running";
-  
-        progress60_2.style.animationPlayState = "running";
-        progress100_2.style.animationPlayState = "running";
-        progress50_3.style.animationPlayState = "running";
-        progress70_2.style.animationPlayState = "running";
-        progress70_3.style.animationPlayState = "running";
-      }
-    } else {
-      header.classList.remove("sticky");
-      mybutton.style.display = "none";
-      logo.style.display = "block";
-    }
+  var scrollTop = document.documentElement.scrollTop;
+
+  header.classList.toggle("sticky", scrollTop > sticky);
+  mybutton.style.display = scrollTop > sticky ? "block" : "none";
+  logo.style.display = scrollTop > sticky ? "none" : "block";
+
+  if (window.screen.width >= 1500 && scrollTop > 900 ||
+      window.screen.width >= 1100 && scrollTop > 700 ||
+      window.screen.width >= 1024 && scrollTop > 500 ||
+      window.screen.width >= 768 && scrollTop > 400 ||
+      window.screen.width < 768 && scrollTop > 400) {
+    progress70.style.animationPlayState = "running";
+    progress100.style.animationPlayState = "running";
+    progress80.style.animationPlayState = "running";
+    progress60.style.animationPlayState = "running";
+    progress50.style.animationPlayState = "running";
+    progress50_2.style.animationPlayState = "running";
+    progress60_2.style.animationPlayState = "running";
+    progress100_2.style.animationPlayState = "running";
+    progress50_3.style.animationPlayState = "running";
+    progress70_2.style.animationPlayState = "running";
+    progress70_3.style.animationPlayState = "running";
   }
 }
+
 
 // _____________________ Botón ver mas en menu ______________________
 

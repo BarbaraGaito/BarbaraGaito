@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Noto Nastaliq Urdu';
+    src: url('Content/Fonts/NotoNastaliqUrdu-VariableFont_wght.ttf') format('truetype');
+}
+
+
+  
 html{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -294,7 +301,15 @@ a{
     overflow: hidden;
     background-color: #F6F6F6;
 }
-
+#presentacionNombre {
+    font-family: 'Noto Nastaliq Urdu', sans-serif;
+    font-size: 105px;
+    width: min-content;
+    line-height: 1.2;
+    text-align: center;
+    user-select: none;
+    margin: -20px 10px 30px;
+}
 .presentacion{
     display: grid;
     justify-content: center;
@@ -307,8 +322,7 @@ a{
     padding-left: 22.5%;
 }
 
-#img3{
-    width: 100%;
+#imgHome img{
     box-shadow: 0 0 20px rgba(182, 181, 187, 0.658);
 }
 
